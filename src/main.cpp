@@ -8,7 +8,7 @@ void TerminateProcessByProgName(char* progName)
 
 bool TaskManager::TerminateProcessbyProgramName(char* programName)
 {
-    HANDLE hSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPALL, 0);
+    /*HANDLE hSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPALL, 0);
     if (hSnapshot == INVALID_HANDLE_VALUE) return false;
 
     PROCESSENTRY32 processEntry;
@@ -34,6 +34,6 @@ bool TaskManager::TerminateProcessbyProgramName(char* programName)
             }
         } while (Process32Next(hSnapshot, &processEntry));
     }
-    CloseHandle(hSnapshot);
+    CloseHandle(hSnapshot);*/
     return false;
 }
